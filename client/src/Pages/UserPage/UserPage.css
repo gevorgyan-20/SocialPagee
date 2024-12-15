@@ -1,0 +1,110 @@
+.UserPage{
+    width: 1440px;
+    height: 888px;
+    max-width: 100%;
+    
+    margin: 33px auto;
+    display: flex;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ruda:wght@400..900&display=swap');
+
+.UserInfLeftBlock{
+    width: 430px;
+    max-width: 25%;
+    padding: 15px 0; 
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img{
+        width: 420px;
+        height: 380px;
+        object-fit: cover;
+    }  
+}
+
+.UserName{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8px;
+    margin-left: 35px;
+    svg{
+       position: relative;
+       top: 4px;
+    }
+    h1{
+        font-size: 37px;
+    }
+}
+
+.UAgeInf,.UgenderInf,.UAddressInf{
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    justify-content: center;
+    svg{
+        position: relative;
+        top: 2.5px;
+     }
+    p{
+        font-size: 29px;
+    }
+}
+
+.UserRightBlock{
+    width: 75%;
+    nav{
+        width: 100%;
+        height: 65px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        background: #054eb5;
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap: 4px;
+            background: #054eb5;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            p {
+                font-family: "Bebas Neue", sans-serif;
+                font-size: 28px;
+                color: #FFFFFF;
+            }
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap: 4px;
+            text-decoration: none;
+            text-align: center;
+            
+            p{
+                font-family: "Bebas Neue", sans-serif;
+
+                font-size: 28px;
+                color: #FFFFFF;
+            }
+
+            svg{
+                position: relative;
+                top: 2px;
+            }
+        }
+    }
+}
+
+.UserRightBlock .active{
+    color: #262622;;
+    text-decoration: underline;
+}
